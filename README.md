@@ -47,3 +47,26 @@ Ensure you have the following:
    ```bash
    git clone https://github.com/your-username/CUDA-FFT-CooleyTukey.git
    cd CUDA-FFT-CooleyTukey
+
+
+## Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/CUDA-FFT-CooleyTukey.git
+   cd CUDA-FFT-CooleyTukey
+
+2. Develop the Code
+- Create a IPYNB File: In your project directory (i.e.CUDA-FFT-CooleyTukey), create a file named CooleyTukeyFFT_Cuda_Project.ipynb .
+- Write the Code: In IPYNB file, write a CUDA program to perform Parallelization of Cooley-Tukey FFT Algorithm
+
+## Write CUDA code in a cell within Colab notebook 
+%%writefile my_cuda_program.cu
+// CUDA code here
+
+## Compile the CUDA code in Google colab
+! nvcc -o fft_cuda fft_cuda.cu
+
+## Execute the compiled program in Google colab
+! ./fft_cuda
+
