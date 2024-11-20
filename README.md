@@ -61,11 +61,11 @@ Ensure you have the following:
 - Write the Code: In IPYNB file, write a CUDA program to perform Parallelization of Cooley-Tukey FFT Algorithm
 
 ## Write CUDA code in a cell within Colab notebook 
-%%writefile my_cuda_program.cu
+%%writefile fft_cuda.cu
 // CUDA code here
 
 ## Compile the CUDA code in Google colab
-! nvcc -o fft_cuda fft_cuda.cu
+! nvcc fft_cuda.cu -o fft_cuda
 
 ## Execute the compiled program in Google colab
 ! ./fft_cuda
